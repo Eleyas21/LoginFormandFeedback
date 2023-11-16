@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="favicon1.png" rel="shortcut icon" type="image/x-icon" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+display: block; }
+ul#menu li {
+  display:inline;
+}
+td {
+       padding: 3px;
+      line-height: 1;
+      vertical-align: top;
+}
+.no{
+text-align:center !important;
+}
+
+.banner{
+
+  background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b) !important;
+}
+
+.panel-heading{
+  background: #e6def1;
+  }
+
+  .dline {                     /* Heading animation */
+    font-weight: bold;
+    font-size: 35px;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+
+
+    @keyframes blink {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: darkslategray;
+    }
+    75% {
+        color: yellow;
+    }
+    85% {
+      color: white;
+  }    
+    100% {
+        color: red;
+    }    }
+
+.ph3{
+margin: 10px 0px !important;
+background-color: #fff !important;
+text-align: center;
+}
+
+
+
+.button-29 {
+      --b: 3px;   /* border thickness */
+      --s: .45em; /* size of the corner */
+      --color: #373B44;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+      color: var(--color);
+      --_p: var(--s);
+      background:
+        conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+      transition: .3s linear, color 0s, background-color 0s;
+      outline: var(--b) solid #0000;
+      outline-offset: .6em;
+      font-size: 16px;
+      border: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+.button-29:hover, .button-29:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-29:active {
+  background: var(--color);
+  color: #fff;
+}
+.btn-container{  
+  text-align: center; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #F9B451;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  padding: 5px;
+  background: rgb(198,219,250);
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+ 
+
+</style>
+
+                    <div style="text-align: center; position: relative; width: 100%; margin: 2px auto;" id="headings_area">
+                        <h1 class="h4 dline" style="margin: 5px 5px 5px 5px;">
+                            Feedback Form
+                        </h5>
+                    </div>
+                </div>
+                    <div class="row panel-heading banner">
+                            <div>
+                                <div >
+                                    <h3>Trainee Information</h3>
+                                </div>
+
+                                <div>
+                                    <table style="width:100%;border-collapse:collapse;">
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Date</b></td>
+                                            <td width="80%" style="border:1px solid black;  border-collapse: collapse;"><input type="date"></td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Round</b></td>
+                                            <td width="80%" style="border:1px solid black;  border-collapse: collapse;"><input type="number" value="54" name="round"></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Course</b></td>
+                                            <td width="80%" style="border:1px solid black; border-collapse: collapse;">Database Design and Development</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Batch ID</b></td>
+                                            <td width="80%" style="border:1px solid black; border-collapse: collapse;"><input type="text" value="DDD/PNTL-M/54/01" name="batchid"></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Modules</b></td>
+                                            <td width="80%" style="border:1px solid black; border-collapse: collapse;">
+                                                    <select name="Modules" id="">
+                                                        <option value="m1">Begining Database Design</option>
+                                                        <option value="m2">Oracle Database 12c: SQL</option>
+                                                        <option value="m3">Oracle Database 12c: PL/SQL</option>
+                                                        <option value="m4">Oracle Fusion Middleware 11g</option>
+                                                        <option value="m5">Oracle Reports Developer 10g</option>
+                                                        <option value="m6">HTML/CSS/JSS</option>
+                                                        <option value="m7">Oracle Apex</option>
+                                                      </select>
+                                                    <br />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Trainee ID</b></td>
+                                            <td width="80%" style="border:1px solid black; border-collapse: collapse;"><input type="number" value="1273608" name="traineeid"></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" style="border:1px solid black; border-collapse: collapse;"><b>Trainee Name</b></td>
+                                            <td width="80%" style="border:1px solid black; border-collapse: collapse;"><input type="text" value="Eleyas Khandakar" name="trainename"></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                    </div>
+
+      <div>
+         <h3 class="ph3"><u>Feedback Questions bellow</u></h3>
+      </div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Q.No</th>
+      <th scope="col">Questions</th>
+      <th scope="col">Select Box</th>
+      <th scope="col">Opinion</th>
+    </tr>
+  </thead>
+<tbody>
+<tr>
+  <td class="no"><b>1</b></td>
+  <td><b>STCDDD701 Chapter 1: The Learning Approach</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+  <td class="no"><b>2</b></td>
+  <td><b>Does your instructor answer your questions during classes?</b></td>
+  <td class="no"><div class="form-check form-check-inline">
+       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+       <label class="form-check-label" for="inlineRadio1">Yes</label>
+       </div>
+       <div class="form-check form-check-inline">
+       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+       <label class="form-check-label" for="inlineRadio2">No</label>
+       </div>
+    </td>
+   <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+<tr>
+  <td class="no"><b>3</b></td>
+  <td><b>STCDDD702 Chapter 2: Oracle APEX Concepts</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>4</b></td>
+  <td><b>STCDDD703 Chapter 3: Create Application Components</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>5</b></td>
+  <td><b>STCDDD704 Chapter 4: Prepare Application Dashboard</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>6</b></td>
+  <td><b>Can you understand the lessons of instructor during in-person/offline class?</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>7</b></td>
+  <td><b>Do you have lacking on any topic? If yes, then describe.</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>8</b></td>
+  <td><b>What kind of problems do you face during practicing your practical tasks?</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>9</b></td>
+  <td><b>How many quizzes/class tests have been taken since the last monthly exam ?</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+<tr>
+<tr>
+  <td class="no"><b>10</b></td>
+  <td><b>Do you have DAG outline? If No, Why ?</b></td>
+  <td class="no"><input class="form-check-input" type="checkbox" name="checkbox"/></td>
+  <td><textarea class="form-control" cols="40" rows="2" name="texarea"></textarea></td>
+</tr>
+
+  </tbody>
+</table>
+
+
+
+ <div class="col-md-12 text-center btn-container">
+             <input type="submit" value="Submit" class="btnSubmit button-29" name="command" onclick="validateForm()"/>
+ </div>
+
+ <footer class="footer">
+    <p>&copy;2023 Eleyas Khandakar | All Rights Reserved</p>
+ </footer>
+
+ <script type="text/javascript">
+    function validateForm() {
+        // Get all input elements that need to be validated
+        var inputsToValidate = document.querySelectorAll('input[type="date"], input[type="number"], input[type="text"], input[type="checkbox"]');
+
+        // Check if all required fields are filled
+        var isValid = true;
+
+        inputsToValidate.forEach(function (input) {
+            if (input.type === 'checkbox') {
+                // For checkboxes, at least one option must be selected
+                var groupName = input.getAttribute('name');
+                var checkedInputs = document.querySelectorAll('input[name="' + groupName + '"]:checked');
+                if (checkedInputs.length === 0) {
+                    isValid = false;
+                }
+            } else if (input.type !== 'radio' && !input.value) {
+                // Ignore radio buttons and validate other input types
+                isValid = false;
+            }
+        });
+
+        if (isValid) {
+          var confirmed = confirm("Do you really want to submit?");
+            if (confirmed) {
+                // Redirect to the linked page
+                window.location.href = "index.html"; // Replace with your desired URL
+            }
+        } else {
+            // Display an error message
+            alert("Please fill up all the information before submit.");
+        }
+    }
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+

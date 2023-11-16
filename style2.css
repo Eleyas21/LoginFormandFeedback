@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: auto;
+}
+
+ul {
+display: block; }
+ul#menu li {
+  display:inline;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  background-color: #00ffdd;
+}
+
+.panel-heading{
+  background: #00ffdd;
+  }
+
+  .dline {                     /* Heading animation */
+    font-weight: bold;
+    font-size: 35px;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+
+
+    @keyframes blink {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: darkslategray;
+    }
+    75% {
+        color: yellow;
+    }
+    85% {
+      color: white;
+  }    
+    100% {
+        color: red;
+    }    }
+
+.ph3{
+margin: 10px 0px !important;
+background-color: #fff !important;
+text-align: center;
+}
+
+.button-29 {
+      --b: 3px;   /* border thickness */
+      --s: .45em; /* size of the corner */
+      --color: #373B44;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+      color: var(--color);
+      --_p: var(--s);
+      background:
+        conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+      transition: .3s linear, color 0s, background-color 0s;
+      outline: var(--b) solid #0000;
+      outline-offset: .6em;
+      font-size: 16px;
+      border: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+.button-29:hover, .button-29:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-29:active {
+  background: var(--color);
+  color: #fff;
+}
+.btn-container{  
+  text-align: center; } 
